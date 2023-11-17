@@ -1,0 +1,518 @@
+:root {
+    --main-color:var(--main-color)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'segoe ui light';
+}
+
+header {
+    z-index: 10;
+}
+
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -999;
+}
+
+.smallnav {
+    color: #910101;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+
+.nav-item a {
+    font-size: 15px;
+    font-weight: bolder !important;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.nav-item a:hover {
+    color: #ffffff;
+}
+
+.navbar {
+    background-image: linear-gradient(to  right,black,black);
+    padding: 2px !important;
+}
+
+
+.navbar-brand {
+    font-size: 30px;
+    color: #910101;
+    font-weight:bolder;
+}
+
+
+header {
+    background-image: linear-gradient(to right, #000000b0,#000000b0);
+}
+
+header img {
+    width: 75%;
+    margin-top: 20px;
+}
+
+.headline {
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    transition: ease-in-out 1s;
+    
+}
+
+header .row p {
+    margin-bottom: 35px;
+    color: rgba(255, 255, 255, 0.663);
+}
+
+.palestine {
+    width:50px;
+    right: 0;
+    z-index: 999;
+}
+
+
+
+
+.mad {
+    color: #910101;
+    border-radius:5% ;
+    padding: 1px;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+}
+
+
+
+.aforbtn{
+    border: 4px solid white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 80px;
+    color: #910101;
+    text-decoration: none;
+    padding: 10px;
+    transition: ease-in-out 0.5s;
+    font-family:sans-serif;
+    background-color: white;
+}
+
+.aforbtn:hover {
+    background-color: #910101;
+    color: white;
+    border: 4px solid #910101;
+}
+
+
+.Partners {
+    background-color: #eaeaea;
+}
+
+.Partners img {
+    filter: grayscale(1);
+    transition: ease-in-out 0.3s;
+}
+
+.Partners img:hover {
+    filter: grayscale(0);
+    transform: scale(1.4,1.4);
+}
+
+.aboutpic{
+    position: relative;
+}
+
+.aboutpic::after {
+    content: '';
+    background-image: linear-gradient(to bottom,#fff,#910101,#fff);
+    height: 50%;
+    width: 1px;
+    position: absolute;
+    transform: translate(60px,120px);
+}
+
+
+#about {
+    margin-bottom: 170px;
+    margin-top: 100px;
+}
+
+#about p {
+    font-size: 30px;
+    font-family: 'segoe ui light';
+    margin-bottom: 30px;
+}
+
+.main-p {
+    color: #726986;
+}
+
+#services {
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+#services h3 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.inner-services {
+    border: 3px solid #fff;
+    background-color: #FFF;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 5px;
+    transition: ease-in-out 0.5s;
+}
+
+.inner-services:hover{
+    transform: translateY(-12px);
+    color: #910101;
+}
+
+
+.icon {
+    font-size: 80px;
+}
+
+
+.title {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #910101;
+}
+
+.title::before{
+    content: '';
+    background-color: #910101;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(75px);
+}
+
+.title::after{
+    content: '';
+    background-color: #910101;
+    height: 9px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(20px);
+}
+
+
+
+#team {
+    background-image: url(../Images/teambackground.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.teamp {
+    font-size: 25px;
+}
+
+.member {
+    position: relative;
+    border: 3px solid #fff;
+    background-color: #FFF;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+
+.pic {
+    width: 150px;    
+}
+
+.pic img {
+    width: 100%;
+} 
+
+.member-info {
+    padding-left: 30px;
+}
+
+#team .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 35px;
+    color: #910101;
+}
+
+#team .member-info p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+#team .member-info span {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#team .member-parent{
+    transition: ease-in-out 0.5s;
+}
+
+#team .member-parent:hover{
+    transform: translateY(-12px);
+}
+
+
+#contact {
+    background-color: #f7f7f7;
+}
+
+.contact .info {
+    border-top: 3px solid #910101;
+    border-bottom: 3px solid #910101;
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.4);
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #910101;
+}
+
+.contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #8d8d8d;
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #910101;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e7f5fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .info .email p {
+    padding-top: 5px;
+}
+
+.contact .php-email-form {
+    width: 100%;
+    border-top: 3px solid #910101;
+    border-bottom: 3px solid #910101;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.4);
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #910101;
+    border: 0;
+    padding: 12px 34px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact .php-email-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact .php-email-form label {
+    padding-bottom: 8px;
+    font-weight: bolder;
+}
+
+.contact .php-email-form input {
+    height: 44px;
+}
+
+
+#footer {
+    font-size: 14px;
+    background: #910101;
+}
+
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #910101;
+}
+
+#footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Jost", sans-serif;
+    color: #5e5e5e;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #910101;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links :hover{
+    color: #910101;
+}
+
+.footer-links {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+#footer .footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#footer .copyright {
+    float: left;
+}
+
+#footer .credits {
+    float: right;
+    font-size: 13px;
+}
+
+#footer .credits a {
+
+    color: #fff;
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+@media (max-width: 800px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header .row h1  {
+        
+        
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    }
+
+    header .row p {
+
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    header .aforbtn {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    header img {
+        width: 200px !important;
+        margin-top: 20px;
+    }
+
+
+    .aboutpic::after{
+        display: none;
+    }
+
+    .mad {
+        font-size: 50px;
+    }
+
+}
